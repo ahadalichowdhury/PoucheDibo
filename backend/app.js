@@ -14,7 +14,7 @@ app.use(cors())
 app.use(xss())
 app.use(helmet())
 
-//increase the request body size
+//increase the request body size this is not necessary
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb'}));
 
